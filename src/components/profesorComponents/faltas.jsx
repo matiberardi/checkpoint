@@ -12,7 +12,9 @@ function Faltas ({ alumnoInicial, setPage }) {
   useEffect(() => {
     let aux = 0
     if (alumno.faltas) {
-      alumno.faltas.forEach(falta => aux += parseFloat(falta.valor))
+      alumno.faltas.forEach(falta =>
+        (aux += parseFloat(falta.valor))
+      )
     }
     setFaltas(aux)
   }, [alumno])
@@ -38,13 +40,11 @@ function Faltas ({ alumnoInicial, setPage }) {
 
   return (
     <div>
-      <button className='bg-slate-300 hover:bg-slate-400 px-2 py-1 rounded-md mb-4' onClick={() => setPage(2)}>
+      <button className='bg-slate-300 hover:bg-slate-400 px-2 py-1 rounded-md mb-4' onClick={() => setPage(1)}>
         Elegir otro alumno
       </button>
       {loading
-        ? (
-          <div className='text-2xl'>Cargando...</div>
-          )
+        ? <div className='text-2xl'>Cargando...</div>
         : (
           <>
             <h1 className='text-3xl font-bold'>{alumno.nombre} {alumno.apellido}</h1>
@@ -52,8 +52,9 @@ function Faltas ({ alumnoInicial, setPage }) {
 
             {alumno.faltas && alumno.faltas.length > 0
               ? (
-                <p className='text-md text-red-400 font-bold mb-4'>Hay {alumno.faltas.length} registro/s</p>
-                )
+                <p className='text-md text-red-400 font-bold mb-4'>
+                  Hay {alumno.faltas.length} registro/s
+                </p>)
               : (
                 <p className='text-md text-red-400 font-bold mb-4'>No hay faltas registradas</p>
                 )}

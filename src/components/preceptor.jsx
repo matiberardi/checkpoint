@@ -1,19 +1,22 @@
-import { useState } from "react";
-import Cursos from "./preceptorComponents/cursos";
-import Alumnos from "./preceptorComponents/alumnos";
-import Faltas from "./preceptorComponents/faltas";
+import { useState } from 'react'
 
-function Preceptor() {
-  const [page, setPage] = useState(1);
+import Cursos from './preceptorComponents/cursos'
+import Alumnos from './preceptorComponents/alumnos'
+import Faltas from './preceptorComponents/faltas'
+
+function Preceptor () {
+  const [page, setPage] = useState(0)
   const [curso, setCurso] = useState(undefined)
   const [alumno, setAlumno] = useState(undefined)
 
+  const pages = [
+    () => <Cursos setPage={setPage} setCurso={setCurso} />,
+    () => <Alumnos page={page} setPage={setPage} curso={curso} setAlumno={setAlumno}/>,
+    () => <Faltas alumnoicial={alumno} setPage={setPage} />
+  ]
+
   return (
-    <>
-      {page === 1 && <Cursos setPage={setPage} setCurso={setCurso}/>}
-      {page === 2 && <Alumnos page={page} setPage={setPage} curso={curso} setAlumno={setAlumno}/>}
-      {page === 3 && <Faltas alumnoInicial={alumno} setPage={setPage} />}
-    </>
+    <>{pages[page]()}</>
   )
 }
 
