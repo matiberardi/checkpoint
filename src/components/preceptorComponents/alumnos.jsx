@@ -14,7 +14,7 @@ function Alumnos ({ setPage, curso, setAlumno }) {
 
   return (
     <>
-      <button className='bg-slate-300 hover:bg-slate-400 px-2 py-1 rounded-md mb-4' onClick={() => setPage(1)}>
+      <button className='bg-slate-300 hover:bg-slate-400 px-2 py-1 rounded-md mb-4' onClick={() => setPage(0)}>
         Elegir otro curso
       </button>
       <h1 className='text-3xl mb-2 font-bold'>Camada {curso}</h1>
@@ -45,7 +45,7 @@ function Alumnos ({ setPage, curso, setAlumno }) {
                   <button
                     className='bg-slate-300 hover:bg-slate-400 px-2 py-1 rounded-md'
                     onClick={() => {
-                      setPage(3)
+                      setPage(2)
                       setAlumno(alumn)
                     }}
                   >

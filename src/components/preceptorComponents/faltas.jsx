@@ -12,7 +12,7 @@ function Faltas ({ alumnoInicial, setPage }) {
   useEffect(() => {
     let aux = 0
     if (alumno.faltas) {
-      alumno.faltas.forEach(falta => aux += parseFloat(falta.valor))
+      alumno.faltas.forEach(falta => (aux += parseFloat(falta.valor)))
     }
     setFaltas(aux)
   }, [alumno])
@@ -38,7 +38,7 @@ function Faltas ({ alumnoInicial, setPage }) {
 
   return (
     <div>
-      <button className='bg-slate-300 hover:bg-slate-400 px-2 py-1 rounded-md mb-4' onClick={() => setPage(2)}>
+      <button className='bg-slate-300 hover:bg-slate-400 px-2 py-1 rounded-md mb-4' onClick={() => setPage(1)}>
         Elegir otro alumno
       </button>
       {loading

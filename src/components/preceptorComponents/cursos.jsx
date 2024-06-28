@@ -14,7 +14,7 @@ function Cursos ({ setPage, setCurso }) {
 
   const changePage = (curso) => {
     setCurso(curso)
-    setPage(2)
+    setPage(1)
   }
 
   return (

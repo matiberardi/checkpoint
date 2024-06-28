@@ -11,7 +11,7 @@ function Preceptor () {
 
   const pages = [
     () => <Cursos setPage={setPage} setCurso={setCurso} />,
-    () => <Alumnos page={page} setPage={setPage} curso={curso} setAlumno={setAlumno}/>,
+    () => <Alumnos page={page} setPage={setPage} curso={curso} setAlumno={setAlumno} />,
     () => <Faltas alumnoicial={alumno} setPage={setPage} />
   ]
 
