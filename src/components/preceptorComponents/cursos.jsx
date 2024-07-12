@@ -20,7 +20,7 @@ function Cursos ({ setPage, setCurso }) {
   return (
     <div>
       <h1 className='text-3xl mb-4'>Cursos</h1>
-      <ul className='grid-cols-4 gap-2'>
+      <ul className='flex flex-col gap-2'>
         {cursos.map((curso) => (
           <li
             key={curso}
