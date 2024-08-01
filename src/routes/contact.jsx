@@ -14,7 +14,7 @@ export default function ContactPage () {
           <p className='text-slate-500 text-2xl'>gpalavecino@etrr.edu.ar</p>
 
           <div className='flex gap-4 mt-20'>
-            <Link to='/Nosotros' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
+            <Link to='/nosotros' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
               Nosotros
             </Link>
             <Link to='/contact' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
