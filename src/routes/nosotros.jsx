@@ -7,7 +7,8 @@ export default function ContactPage () {
       <div className='flex'>
         <section className=''>
           <p className='text-2xl max-w-[600px] mb-4'>
-            Si tienes dudas o necesitas ayuda, no dudes en contactarnos.a
+            Checkpoint es una página que brinda su servicio a instituciones para facilitar el registro de asistencias dentro de las mismas.</br>
+            Se utiliza una base de datos para cargar de forma sencilla la información necesaria de cada identidad.
           </p>
 
           <div className='flex gap-4 mt-20'>
