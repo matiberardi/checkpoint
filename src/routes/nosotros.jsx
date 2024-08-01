@@ -1,37 +1,17 @@
-import { Link } from 'react-router-dom'
-
-export default function ContactPage () {
+function Nosotros () {
   return (
-    <>
-      <h1 className='text-3xl'>Nosotros</h1>
-      <div className='flex'>
-        <section className=''>
-          <p className='text-2xl max-w-[600px] mb-20'>
+    <main>
+      <p className='text-2xl max-w-[600px] mb-20'>
         Checkpoint es una página que brinda su servicio a instituciones para facilitar el registro de asistencias dentro de las mismas.
-          </br>
+      </p>
+      <p className='text-2xl max-w-[600px] mb-20'>
         Se utiliza una base de datos para cargar de forma sencilla la información necesaria de cada identidad.
-          </br>
+      </p>
+      <p className='text-2xl max-w-[600px] mb-20'>
         ¿Qué esperas? ¡Aprovecha al máximo las grandes capacidades de Checkpoint!
       </p>
-
-          <div className='flex gap-4 mt-20'>
-            <Link to='/nosotros' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
-              Nosotros
-            </Link>
-            <Link to='/contact' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
-              Contacto
-            </Link>
-            <Link to='/dashboard' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
-              Asistencias
-            </Link>
-          </div>
-        </section>
-        <img
-          className='w-full max-w-[600px] rounded border-4 border-slate-300'
-          src='https://images.unsplash.com/photo-1538688423619-a81d3f23454b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='Personas trabajando en una laptop'
-        />
-      </div>
-    </>
+    </main>  
   )
 }
+
+export default Nosotros
