@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function ContactPage () {
+export default function NosotrosPage () {
   return (
     <>
       <h1 className='text-3xl'>Nosotros</h1>
