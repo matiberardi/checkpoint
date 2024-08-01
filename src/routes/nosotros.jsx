@@ -8,7 +8,7 @@ function Nosotros () {
         Se utiliza una base de datos para cargar de forma sencilla la información necesaria de cada identidad.
       </p>
       <p className='text-2xl max-w-[600px] mb-20'>
-        ¿Qué esperas? ¡Aprovecha al máximo las grandes capacidades de Checkpoint!
+        ¿Qué esperas? ¡Aprovecha al máximo las grandes capacidades de Checkpoint!a
       </p>
     </main>  
   )
