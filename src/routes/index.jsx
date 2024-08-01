@@ -10,7 +10,7 @@ export default function IndexPage () {
 
         
         <div className='flex gap-4'>
-          <Link to='/Nosotros' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
+          <Link to='/nosotros' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
               Nosotros
             </Link>
           <Link to='/contact' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
