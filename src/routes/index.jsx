@@ -8,7 +8,11 @@ export default function IndexPage () {
           ¡Toma tu asistencia fácilmente y ahorra tiempo para lo que realmente importa! Regístrate ahora y disfruta de un control sencillo y rápido de tu presencia en clase.
         </p>
 
+        
         <div className='flex gap-4'>
+          <Link to='/Nosotros' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
+              Nosotros
+            </Link>
           <Link to='/contact' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
             Contacto
           </Link>
