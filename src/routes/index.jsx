@@ -23,7 +23,7 @@ export default function IndexPage () {
       </section>
       <img
         className='w-full max-w-[600px] rounded-md border-4 border-slate-300'
-        src='https://images.unsplash.com/photo-1538688423619-a81d3f23454b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        src='https://i.imghippo.com/files/WbrxZ1722601325.jpg'
         alt='Personas trabajando en una laptop'
       />
     </div>
