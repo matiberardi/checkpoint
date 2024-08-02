@@ -21,7 +21,7 @@ function Cursos ({ setPage, setCurso }) {
     <div>
       <h1 className='text-3xl mb-4'>Cursos</h1>
       {/*<ul className='grid grid-cols-2 gap-2 w-fit'>*/}
-      <ul className='grid grid-cols-2 gap-2 w-fit'>
+      <ul className='grid grid-cols-4 gap-2 w-fit'>
         {cursos.map((curso) => (
           <li
             key={curso}
