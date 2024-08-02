@@ -41,7 +41,7 @@ function Faltas ({ alumnoInicial, setPage }) {
   return (
     <div>
       <button className='bg-slate-300 hover:bg-slate-400 px-2 py-1 rounded-md mb-4' onClick={() => setPage(1)}>
-        Elegir otro alumno
+        Volver a curso
       </button>
       {loading
         ? <div className='text-2xl'>Cargando...</div>
