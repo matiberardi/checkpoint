@@ -27,27 +27,35 @@ export async function getAlumno (id) {
   return alumno
 }
 
+function transformDate (date) {
+  const [year, month, day] = date.split('-')
+  return new Date(year, month - 1, day)
+}
+
 export async function addFalta (alumno, { fecha, valor, id }) {
   if (!alumno.faltas) alumno.faltas = []
 
-  // ver si ya hay una falta ese dia
-  const { data: faltas } = await supabase
-    .from('alumnos')
-    .select('faltas')
-    .eq('id', alumno.id)
+  // saber si es sabado o domingo
+  const date = transformDate(fecha)
 
-  if (faltas[0].faltas) {
-    const faltasDia = faltas[0].faltas.filter((falta) => falta.fecha === fecha)
-    if (faltasDia.length > 0) return { error: 'Ya hay una falta ese día' }
+  if (date.getDay() === 0) {
+    return { error: 'No se puede registrar un falta en domingo' }
+  } else if (date.getDay() === 6) {
+    return { error: 'No se puede registrar un falta en sabado' }
+  }
+
+  if (alumno.faltas.length > 0) {
+    const faltasDia = alumno.faltas.filter((falta) => falta.fecha === fecha)
+    if (faltasDia.length > 0) {
+      return { error: 'Ya hay una falta ese día' }
+    }
   }
 
   const { error } = await supabase
     .from('alumnos')
     .update({ faltas: [...alumno.faltas, { fecha, valor, id }] })
     .eq('id', alumno.id)
-  if (error) {
-    console.log(error)
-  }
+  if (error) return { error: error.message }
 }
 
 export async function updateFaltas (id, faltas) {

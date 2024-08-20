@@ -15,7 +15,7 @@ export default function RootLayout () {
       routerReplace={(to) => navigate(to, { replace: true })}
       publishableKey={PUBLISHABLE_KEY}
     >
-      <header className='ml-10'>
+      <header className='ml-10 pt-10'>
         <div>
           <Link to='/' className='font-bold text-3xl mr-10'>
             Checkpoint
