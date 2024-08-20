@@ -22,7 +22,7 @@ function Alumnos ({ setPage, curso, setAlumno }) {
         Elegir otro curso
       </button>
       <h1 className='text-3xl mb-2 font-bold'>Camada {curso}</h1>
-      <table className='w-full text-left mb-20'>
+      <table className='w-full text-left gap-8'>
         <thead>
           <tr>
             <th>Nombre</th>
@@ -61,6 +61,7 @@ function Alumnos ({ setPage, curso, setAlumno }) {
           })}
         </tbody>
       </table>
+      <div className='h-20' />
     </>
   )
 }

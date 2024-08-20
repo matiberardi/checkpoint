@@ -29,6 +29,18 @@ export async function getAlumno (id) {
 
 export async function addFalta (alumno, { fecha, valor, id }) {
   if (!alumno.faltas) alumno.faltas = []
+
+  // ver si ya hay una falta ese dia
+  const { data: faltas } = await supabase
+    .from('alumnos')
+    .select('faltas')
+    .eq('id', alumno.id)
+
+  if (faltas[0].faltas) {
+    const faltasDia = faltas[0].faltas.filter((falta) => falta.fecha === fecha)
+    if (faltasDia.length > 0) return { error: 'Ya hay una falta ese día' }
+  }
+
   const { error } = await supabase
     .from('alumnos')
     .update({ faltas: [...alumno.faltas, { fecha, valor, id }] })

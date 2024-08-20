@@ -1,7 +1,3 @@
-export default function formatDate(date) {
-  return new Date(date).toLocaleDateString("es-SP", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+export default function formatDate (date) {
+  return date.split('-').reverse().join('/')
 }

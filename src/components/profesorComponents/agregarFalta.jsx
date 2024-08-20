@@ -14,7 +14,13 @@ function AgregarFalta ({ alumno, updateAlumno }) {
     const formData = new FormData(e.target)
     const { fecha, valor } = Object.fromEntries(formData)
     const id = Math.random().toString(36).slice(2)
-    await addFalta(alumno, { fecha, valor, id })
+    const { error } = await addFalta(alumno, { fecha, valor, id })
+
+    if (error) {
+      alert(error)
+      return
+    }
+
     handleForm()
     e.target.reset()
     updateAlumno()

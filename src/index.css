@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 #root {
-  @apply bg-slate-200 text-slate-600 min-h-screen pt-20;
+  @apply bg-slate-200 text-slate-600 min-h-screen;
 }

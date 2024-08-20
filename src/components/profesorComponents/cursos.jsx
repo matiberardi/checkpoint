@@ -20,11 +20,11 @@ function Cursos ({ setCurso, setPage }) {
   return (
     <div>
       <h4>Cursos disponibles</h4>
-      <ul>
+      <ul className='grid grid-cols-3 gap-4'>
         {cursos.map((curso) => (
           <li
             key={curso}
-            className='text-xl bg-slate-300 w-fit px-4 py-2 rounded-md mb-2 hover:bg-slate-400 cursor-pointer m-1'
+            className='text-xl bg-slate-300 w-fit px-4 py-2 rounded-md hover:bg-slate-400 cursor-pointer'
           >
             <button onClick={() => changePage(curso)}>{curso}</button>
           </li>
