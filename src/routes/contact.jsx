@@ -27,7 +27,7 @@ export default function ContactPage () {
         </section>
         <img
           className='w-full max-w-[600px] rounded border-4 border-slate-300'
-          src='https://images.unsplash.com/photo-1538688423619-a81d3f23454b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          src='<img src="https://i.imghippo.com/files/gInwf1725909470.png" alt="" border="0">'
           alt='Personas trabajando en una laptop'
         />
       </div>
