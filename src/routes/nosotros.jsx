@@ -27,7 +27,7 @@ export default function ContactPage () {
         </section>
         <img
           className='w-full max-w-[600px]'
-          src='https://i.imghippo.com/files/1O0Bv1726166121.png'
+          src='https://i.imghippo.com/files/2GrD61726169042.png'
           alt='Logo'
         />
       </div>
