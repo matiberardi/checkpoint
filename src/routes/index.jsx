@@ -23,7 +23,7 @@ export default function IndexPage () {
       </section>
       <img
         className='w-full max-w-[600px]'
-        src='https://i.imghippo.com/files/xGSaQ1726167117.png'
+        src='https://i.imghippo.com/files/OIgOL1726170071.png'
         alt='Personas trabajando en una laptop'
       />
     </div>
