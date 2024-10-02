@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 #root {
-  @apply bg-slate-200 text-slate-600 min-h-screen;
+  @apply text-slate-600 min-h-screen bg-[url('./fondo2.png')] bg-no-repeat bg-cover bg-fixed bg-opacity-10;
 }

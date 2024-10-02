@@ -33,6 +33,7 @@ export default function RootLayout () {
       <main className='ml-10'>
         <Outlet />
       </main>
+
     </ClerkProvider>
   )
 }
