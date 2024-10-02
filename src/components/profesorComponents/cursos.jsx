@@ -56,7 +56,7 @@ function Cursos ({ setCurso, setPage }) {
     <div>
       <h4>Cursos disponibles</h4>
 
-      <section className='flex gap-20'>
+      <section className='flex gap-60'>
         <div className='grid grid-cols-3 w-fit'>
           <ShowCurso curso={cursos.TEL} moda='TEL' changePage={changePage} />
           <ShowCurso curso={cursos.TEM} moda='TEM' changePage={changePage} />
