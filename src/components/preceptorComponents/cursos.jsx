@@ -63,7 +63,8 @@ function Cursos ({ setCurso, setPage }) {
           <ShowCurso curso={cursos.basico} moda='Curso Basico' changePage={changePage} />
         </div>
 
-        <img src='https://i.imghippo.com/files/84Jh51722602676.png' alt='imagen' className='h-96' />
+        {/* <img src='https://i.imghippo.com/files/84Jh51722602676.png' alt='imagen' className='h-96' /> */}
+        <img src='./buho.png' alt='imagen' className='h-96' />
       </section>
 
     </div>

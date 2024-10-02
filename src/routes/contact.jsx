@@ -27,7 +27,8 @@ export default function ContactPage () {
         </section>
         <img
           className='w-full max-w-[600px]'
-          src='https://i.imghippo.com/files/gInwf1725909470.png'
+          // src='https://i.imghippo.com/files/gInwf1725909470.png'
+          src='./buho.png'
           alt='Personas trabajando en una laptop'
         />
       </div>

@@ -8,11 +8,10 @@ export default function IndexPage () {
           ¡Toma tu asistencia fácilmente y ahorra tiempo para lo que realmente importa! Regístrate ahora y disfruta de un control sencillo y rápido de tu presencia en clase.
         </p>
 
-        
         <div className='flex gap-4'>
           <Link to='/nosotros' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
-              Nosotros
-            </Link>
+            Nosotros
+          </Link>
           <Link to='/contact' className='font-bold bg-slate-300 hover:bg-slate-400 px-4 py-2 rounded-md'>
             Contacto
           </Link>
@@ -23,7 +22,8 @@ export default function IndexPage () {
       </section>
       <img
         className='w-full max-w-[600px]'
-        src='https://i.imghippo.com/files/OIgOL1726170071.png'
+        // src='https://i.imghippo.com/files/OIgOL1726170071.png'
+        src='./buho.png'
         alt='Personas trabajando en una laptop'
       />
     </div>
