@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
+html {
   background-image: url('./fondo2.png');
   @apply text-slate-600 min-h-screen bg-no-repeat bg-cover bg-fixed bg-opacity-10;
 }
+
