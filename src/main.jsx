@@ -37,6 +37,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <main className='text-slate-600 min-h-screen bg-no-repeat bg-cover bg-fixed bg-opacity-10 bg-[url("./fondo2.png")]'>
+      <RouterProvider router={router} />
+    </main>
   </React.StrictMode>
 )
