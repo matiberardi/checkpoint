@@ -37,8 +37,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <main className='text-slate-600 min-h-screen bg-no-repeat bg-cover bg-fixed bg-opacity-10 bg-[url("./fondo2.png")]'>
+    <main style={{ backgroundImage: 'url("./fondo2.png")' }} className='text-slate-600 min-h-screen bg-no-repeat bg-cover bg-fixed bg-opacity-10 bg-[url("./fondo2.png")]'>
       <RouterProvider router={router} />
     </main>
+    <img src='./fondo2.png' className='hidden' />
   </React.StrictMode>
 )
